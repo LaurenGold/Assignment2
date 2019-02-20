@@ -3,12 +3,7 @@
  * @version %I%
  *  class id: 383
  *  Assignment2
- *  Description: 
- *  
- *  
- *  
- *  
- *  
+ *  Description:   
  */
 
 package cse360assign2;
@@ -25,26 +20,32 @@ public class Calculator {
 	
 	// the getTotal method returns the total for this calculation
 	public int getTotal () {
-		return 0;
+		return total;
 	}
 	
 	// the add method adds integers @param value to be tested
 	public void add (int value) {
-		
+		total += value;
 	}
 	
 	// the subtract method subtracts integers @param value to be tested
 	public void subtract (int value) {
-		
+		total -= value;
 	}
 	
 	//the multiply method multiplies integers @param value to be tested
 	public void multiply (int value) {
-		
+		total = total * value;
 	}
 	
 	//the divide method divides integers @value to be tested
 	public void divide (int value) {
+		if (value == 0) {
+			total = 0;
+		}
+		else {
+			total = total / value;
+		}
 		
 	}
 	
